@@ -1,0 +1,25 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "mindspun/link-group",
+  "version": "0.17.1",
+  "title": "Link Group",
+  "category": "mindspun-responsive-blocks",
+  "description": "Turns a group of blocks into one big clickable link.",
+  "example": {},
+  "attributes": {
+    "link": {
+      "type": "object",
+      "default": {
+        "rel": []
+      }
+    }
+  },
+  "textdomain": "mrblx",
+  "editorScript": "file:./index.js",
+  "style": "file:./style.css",
+  "supports": {
+    "anchor": true,
+    "className": true
+  }
+}

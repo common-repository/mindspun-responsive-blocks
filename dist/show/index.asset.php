@@ -1,0 +1,1 @@
+<?php return array('dependencies' => array('@mindspun/mrblx', 'react', 'wp-block-editor', 'wp-blocks', 'wp-components', 'wp-data', 'wp-element', 'wp-i18n', 'wp-primitives'), 'version' => '8642dda5fe590cb8590d');

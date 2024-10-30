@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "mindspun/buttons",
+  "version": "0.17.1",
+  "title": "Buttons",
+  "category": "mindspun-responsive-blocks",
+  "description": "Fully-responsive button group.",
+  "example": {},
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "style": {
+      "type": "object",
+      "default": {}
+    }
+  },
+  "textdomain": "mrblx",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.css",
+  "style": [
+    "style-mrblx",
+    "file:./style.css"
+  ],
+  "supports": {
+    "className": true
+  }
+}

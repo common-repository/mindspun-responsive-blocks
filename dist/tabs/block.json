@@ -1,0 +1,60 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "mindspun/tabs",
+  "title": "Tabs",
+  "category": "mindspun-responsive-blocks",
+  "description": "Tabbed container.",
+  "textdomain": "mrblx",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.css",
+  "style": [
+    "style-mrblx",
+    "file:./style.css"
+  ],
+  "attributes": {
+    "blockId": {
+      "type": "string"
+    },
+    "labels": {
+      "type": "object",
+      "default": {}
+    },
+    "stackOnMobile": {
+      "type": "boolean",
+      "default": true
+    },
+    "header": {
+      "type": "object",
+      "default": {},
+      "selector": ".mrblx--tabs"
+    },
+    "tab": {
+      "type": "object",
+      "default": {},
+      "selector": ".mrblx--tab:not(.mrblx--tab--active)"
+    },
+    "activeTab": {
+      "type": "object",
+      "default": {},
+      "selector": ".mrblx--tab--active"
+    },
+    "content": {
+      "type": "object",
+      "default": {},
+      "selector": ".wp-block-mindspun-tab"
+    },
+    "style": {
+      "type": "object",
+      "default": {}
+    }
+  },
+  "viewScript": "file:./view.js",
+  "providesContext": {
+    "mindspun/tabs": "labels"
+  },
+  "version": "0.17.1",
+  "supports": {
+    "className": true
+  }
+}
